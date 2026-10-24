@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProMusic — Trending music, your library, downloads & history</title>
+<meta name="description" content="ProMusic is a fast, dark Android music app: trending songs, India's biggest hits, your library, downloads and history.">
+<style>
+  :root { --bg:#0b0f0e; --card:#141b18; --card2:#182420; --green:#43d465; --green-dim:#2ea84e; --text:#f2f5f3; --muted:#a7b3ad; --line:#243329; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.6; }
+  a { color:var(--green); text-decoration:none; }
+  .wrap { max-width:1100px; margin:0 auto; padding:0 24px; }
+  nav { display:flex; align-items:center; justify-content:space-between; padding:22px 0; }
+  .logo { font-size:26px; font-weight:800; letter-spacing:-.5px; }
+  .logo span { color:var(--green); }
+  .navlinks a { margin-left:26px; color:var(--muted); font-weight:600; }
+  .navlinks a:hover { color:var(--text); }
+  .btn { display:inline-block; background:var(--green); color:#07130a; font-weight:700; padding:14px 26px; border-radius:999px; font-size:16px; }
+  .btn:hover { background:var(--green-dim); color:#fff; }
+  .btn-ghost { background:transparent; color:var(--text); border:1px solid var(--line); }
+  .btn-ghost:hover { border-color:var(--green); color:var(--green); }
+  .hero { display:flex; align-items:center; gap:60px; padding:50px 0 70px; }
+  .hero-text { flex:1; }
+  .hero-text h1 { font-size:56px; line-height:1.05; letter-spacing:-1.5px; margin-bottom:18px; }
+  .hero-text h1 span { color:var(--green); }
+  .hero-text p { color:var(--muted); font-size:19px; max-width:520px; margin-bottom:30px; }
+  .hero-cta { display:flex; gap:14px; flex-wrap:wrap; }
+  .hero-cta small { display:block; color:var(--muted); margin-top:12px; font-size:13px; }
+  .hero-phone img { width:320px; max-width:80vw; border-radius:24px; display:block; }
+  .section { padding:60px 0; }
+  .section h2 { font-size:34px; letter-spacing:-.5px; margin-bottom:12px; }
+  .section .sub { color:var(--muted); margin-bottom:36px; max-width:640px; }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:26px; }
+  .card .ico { font-size:30px; margin-bottom:12px; }
+  .card h3 { font-size:19px; margin-bottom:6px; }
+  .card p { color:var(--muted); font-size:15px; }
+  .shots { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; align-items:start; }
+  .shot { text-align:center; }
+  .shot img { width:100%; border-radius:18px; display:block; }
+  .shot p { color:var(--muted); margin-top:12px; font-size:14px; }
+  .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  .step { background:var(--card2); border:1px solid var(--line); border-radius:20px; padding:26px; }
+  .step .n { color:var(--green); font-size:26px; font-weight:800; margin-bottom:8px; }
+  .step h3 { font-size:18px; margin-bottom:6px; }
+  .step p { color:var(--muted); font-size:15px; }
+  footer { border-top:1px solid var(--line); padding:30px 0 46px; color:var(--muted); font-size:14px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+  @media (max-width:860px) {
+    .hero { flex-direction:column; text-align:center; }
+    .hero-text p { margin:0 auto 30px; }
+    .hero-cta { justify-content:center; }
+    .hero-text h1 { font-size:42px; }
+    .grid, .shots, .steps { grid-template-columns:1fr 1fr; }
+    .navlinks a { margin-left:14px; }
+  }
+  @media (max-width:520px) {
+    .grid, .shots, .steps { grid-template-columns:1fr; }
+    .navlinks { display:none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <div class="logo"><span>♪</span> ProMusic</div>
+    <div class="navlinks">
+      <a href="#features">Features</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#install">Install</a>
+      <a href="https://github.com/akhilesh2412/ProMusic">GitHub</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Music that<br>moves <span>with you.</span></h1>
+      <p>Trending songs, India's biggest hits, your library, downloads and history — in one fast, dark Android app with a Groove Green soul.</p>
+      <div class="hero-cta">
+        <a class="btn" href="https://github.com/akhilesh2412/ProMusic/releases/download/v2.0/ProMusic.apk">⬇ Download for Android</a>
+        <a class="btn btn-ghost" href="https://github.com/akhilesh2412/ProMusic">View on GitHub</a>
+      </div>
+      <small>Version 2.0 &nbsp;•&nbsp; ~8.4 MB &nbsp;•&nbsp; Android 8.0 or newer</small>
+    </div>
+    <div class="hero-phone">
+      <img src="screenshots/mockup-home.jpg" alt="ProMusic home screen in a phone">
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <h2>Everything you listen to, in one place</h2>
+    <p class="sub">No clutter, no noise — just your music, beautifully organised.</p>
+    <div class="grid">
+      <div class="card"><div class="ico">🔥</div><h3>Trending now</h3><p>The songs everyone is listening to, with artwork, artist and quick actions on every track.</p></div>
+      <div class="card"><div class="ico">🇮🇳</div><h3>India's biggest hits</h3><p>Curated hit playlists and new albums &amp; singles — Bollywood to regional music.</p></div>
+      <div class="card"><div class="ico">♥</div><h3>Your Library</h3><p>Favorites, Playlists, Downloads and History, all in one place, with counts at a glance.</p></div>
+      <div class="card"><div class="ico">⬇</div><h3>Downloads</h3><p>Save songs for offline listening in high quality.</p></div>
+      <div class="card"><div class="ico">🕘</div><h3>History</h3><p>Every play remembered, so you can jump back to what you loved.</p></div>
+      <div class="card"><div class="ico">🎨</div><h3>Personalize it</h3><p>Dark theme with Groove Green accent, blurred-artwork player look, balanced controls.</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="screenshots">
+    <h2>Take a look inside</h2>
+    <p class="sub">Real screens from the app, exactly as they appear on your phone.</p>
+    <div class="shots">
+      <div class="shot"><img src="screenshots/mockup-home.jpg" alt="ProMusic home and trending"><p>Home / Trending</p></div>
+      <div class="shot"><img src="screenshots/mockup-hits.jpg" alt="ProMusic India's biggest hits"><p>India's biggest hits</p></div>
+      <div class="shot"><img src="screenshots/mockup-library.jpg" alt="ProMusic library"><p>Your Library</p></div>
+      <div class="shot"><img src="screenshots/mockup-settings.jpg" alt="ProMusic settings"><p>Settings &amp; profile</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="install">
+    <h2>Install in a minute</h2>
+    <p class="sub">ProMusic is distributed as an APK while it is not on the Play Store yet.</p>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Download the APK</h3><p>Tap the download button above to get ProMusic v2.0 for Android.</p></div>
+      <div class="step"><div class="n">2</div><h3>Allow install</h3><p>When asked, allow <b>Install unknown apps</b> for your browser — this is standard for APK installs.</p></div>
+      <div class="step"><div class="n">3</div><h3>Open &amp; enjoy</h3><p>Open the app, explore Trending, and build your library. Requires Android 8.0+ and internet for streaming.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <div>♪ ProMusic — made for music lovers.</div>
+    <div><a href="https://github.com/akhilesh2412/ProMusic">GitHub</a> &nbsp;•&nbsp; © 2026 ProMusic. All rights reserved.</div>
+  </footer>
+</div>
+</body>
+</html>

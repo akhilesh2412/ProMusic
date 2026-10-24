@@ -1,0 +1,4 @@
+# Never commit APK binaries to the repo — releases carry them
+*.apk
+*.aab
+.DS_Store
